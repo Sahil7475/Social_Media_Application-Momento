@@ -1,0 +1,27 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap");
+
+html,
+body,
+#root,
+.app {
+  height: 100%;
+  width: 100%;
+  font-family: "Rubik", sans-serif;
+}
+.scrollable-feed {
+  /* For WebKit-based browsers (Chrome, Safari) */
+  &::-webkit-scrollbar {
+    height: 10px;
+    width: 10px;
+    background-color: transparent;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: transparent;
+    border-radius: 5px;
+  }
+
+  /* For Firefox */
+  scrollbar-width: thin;
+  scrollbar-color: rgba(255, 255, 255, 0.3) transparent;
+}
